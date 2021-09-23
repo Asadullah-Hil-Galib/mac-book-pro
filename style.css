@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  margin-top: 2rem;
+}
+.container {
+  width: 1190px;
+  height: 40px;
+}
+.divider {
+  border: 1px solid #999;
+}
+/*
+==================================
+         PRODUCT PAGE DESIGN
+==================================
+*/
+.about-product {
+  display: flex;
+  justify-content: space-between;
+}
+.product-img,
+.product-details {
+  width: 48%;
+}
+.product-img img {
+  max-width: 100%;
+}
+.product-info h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.product-info p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+.memory,
+.storage,
+.delivery-caption {
+  margin-top: 2rem;
+}
+.memory button,
+.storage button,
+.delivery-caption button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #555;
+  background: transparent;
+  padding: 2px 7px;
+  outline: none;
+  border: 1px solid #555;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  margin-top: 5px;
+}
+.memory button:hover,
+.storage button:hover,
+.delivery-caption button:hover {
+  background: #333;
+  cursor: pointer;
+  color: aliceblue;
+}
+.price-counting {
+  width: 300px;
+  padding: 2rem 0;
+}
+.price-counting ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+.price-counting ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+.price-counting ul li strong:first-child {
+  width: 80%;
+}
+.price-counting ul li strong:last-child {
+  width: 20%;
+}
+.promo-code span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+.promo-code  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.promo-code input{
+    width: 80%;
+    outline: none;
+    border: 1px solid #777;
+    padding: 6px;
+    border-radius: 5px;
+}
+.promo-code button{
+    width: 20%;
+    cursor: pointer;
+    font-weight: 600;
+    color: aliceblue;
+    background: #e83a3b;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.product-order-price h2{
+    font-size: 2.7rem;
+    text-align: center;
+    border-top: 1px solid #777;
+}
+
+@media only screen and (max-width:690px){
+    .container{
+        padding: 0 1rem;
+    }
+    .about-product {
+        flex-wrap: wrap;
+    }
+    .product-img{
+        width: 100%;
+    }
+    .product-details{
+        width: 100%;
+    }
+}

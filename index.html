@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac Book Pro</title>
+    <!--------Google Text Font CDN--------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--------CSS StyleSheet CDN--------->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="about-product">
+          <!---------Product Images--------->
+          <div class="product-img">
+            <img src="img/mac.png" alt="MAC BOOK PRO IMG" />
+          </div>
+          <div class="product-details">
+            <div class="product-info">
+              <h1>Coustomize you Blue 24-inch iMac with Apple M1 chip.</h1>
+              <p>
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                defficiency cores, 7-core GPU, and 16-core Neural Engine 8GB
+                unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+                Magic Mouse Mahic Keyboard - US English.
+              </p>
+            </div>
+            <!-----------Product Priching Config---------->
+            <div class="product-pricing-config">
+              <div class="memory">
+                <h4>Memory</h4>
+                <div>
+                  <button id="defould-memory">8GB unified memory</button>
+                  <button id="extra-memory">16GB unified memory</button>
+                </div>
+              </div>
+              <div class="storage">
+                <h4>Storage</h4>
+                <div>
+                  <button id="defould-storage">256GB SSD storage</button>
+                  <button id="storage-512-gb">512GB SSD storage</button>
+                  <button id="storage-1-tb">1TB SSD storage</button>
+                </div>
+              </div>
+              <div class="delivery-caption">
+                <h4>Choose your delivery option</h4>
+                <button id="delivery-defould-charge">
+                  Friday, Agu 25 FREE Prime Delivery
+                </button>
+                <button id="set-delivery-charge">
+                  Friday, Agu 21 Delivery charge $20
+                </button>
+              </div>
+              <!---------Price Counting Mark--------->
+              <div class="price-counting">
+                <ul>
+                  <li>
+                    <strong>Best Price</strong>
+                    <strong>$<span id="defould-price">1299</span></strong>
+                  </li>
+                  <li>
+                    <strong>Extra Memory Cost</strong>
+                    <strong>$<span id="memory-cost">0</span></strong>
+                  </li>
+                  <li>
+                    <strong>Extra Storage Cost</strong>
+                    <strong>$<span id="storage-cost">0</span></strong>
+                  </li>
+                  <li>
+                    <strong>Delivery charge</strong>
+                    <strong>$<span id="delivery-charge">0</span></strong>
+                  </li>
+                  <div class="divider"></div>
+                  <li>
+                    <strong>Total Price</strong>
+                    <strong>$<span id="total-price">1299</span></strong>
+                  </li>
+                </ul>
+                <!----------Promo Code Mark---------->
+                <div class="promo-code">
+                  <span>Add Pomo Code</span>
+                  <div>
+                    <input id="promo-filed" type="text" />
+                    <button id="promo-apply">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-order-price">
+          <h2>Total: $<span id="final-order-price">1299</span></h2>
+        </div>
+      </section>
+    </main>
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
